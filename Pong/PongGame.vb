@@ -38,9 +38,9 @@ Public Class PongGame
         rightPaddle.SetWidth(20) _
             .SetHeight(100) _
             .SetCenter(New PointF(Morphic.World.Right - 30, Morphic.World.Center.Y)) _
-            '.SetStepper(New PaddleStepper(ball))
+            .SetStepper(New PaddleStepper(ball))
 
-        Morphic.World.OnMouseMoveDo(Function(evt, ign) rightPaddle.SetCenter(New PointF(rightPaddle.Center.X, evt.Position.Y.MinMax(Morphic.World.Height - rightPaddle.Height / 2, rightPaddle.Height / 2))))
+        'Morphic.World.OnMouseMoveDo(Function(evt, ign) rightPaddle.SetCenter(New PointF(rightPaddle.Center.X, evt.Position.Y.MinMax(Morphic.World.Height - rightPaddle.Height / 2, rightPaddle.Height / 2))))
 
         Morphic.AddMorph(ball).AddMorph(leftPaddle).AddMorph(rightPaddle)
     End Sub
