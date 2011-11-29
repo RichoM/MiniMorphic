@@ -326,8 +326,6 @@ Public Class Morph
         Return Me
     End Function
 
-
-
     Public Overridable Function HandleEvent(ByVal evt As MorphicEvent) As Morph
         SubmorphsReversedDo(Function(submorph) submorph.HandleEvent(evt))
         If Not evt.WasHandled AndAlso _eventHandler.HandlesEvent(evt, Me) Then evt.HandledBy(_eventHandler, Me)
