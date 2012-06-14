@@ -148,4 +148,15 @@ Public Class FormV
         Return m
     End Function
 
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+        Dim line As New LineMorph(Morphic.World.Center, Morphic.World.Center)
+        line.SetColor(Color.Black)
+
+        Morphic.AddMorph(line)
+
+        Morphic.World.OnMouseMoveDo(Function(evt, m)
+                                        line.EndPoint = evt.Position
+                                        Return line
+                                    End Function)
+    End Sub
 End Class

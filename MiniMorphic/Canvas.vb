@@ -3,6 +3,11 @@
 Public Class Canvas
     Dim graphic As Graphics
 
+    Public Function DrawLine(ByVal color As Color, ByVal pt1 As PointF, ByVal pt2 As PointF) As Canvas
+        Dim pen As New Pen(color)
+        graphic.DrawLine(pen, pt1, pt2)
+        Return Me
+    End Function
 
     Public Function FillRectangle(ByVal color As Color, ByVal rect As RectangleF) As Canvas
         Dim pen As New Pen(color)

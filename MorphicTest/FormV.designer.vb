@@ -22,15 +22,16 @@ Partial Class FormV
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.Button4 = New System.Windows.Forms.Button
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox
-        Me.Button5 = New System.Windows.Forms.Button
-        Me.Button6 = New System.Windows.Forms.Button
-        Me.Morphic = New MiniMorphic.Morphic
-        Me.Button7 = New System.Windows.Forms.Button
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Morphic = New MiniMorphic.Morphic()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -97,6 +98,15 @@ Partial Class FormV
         Me.Button6.Text = "Button6"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(12, 211)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 8
+        Me.Button7.Text = "Button7"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'Morphic
         '
         Me.Morphic.BackColor = System.Drawing.Color.White
@@ -106,20 +116,21 @@ Partial Class FormV
         Me.Morphic.Size = New System.Drawing.Size(487, 457)
         Me.Morphic.TabIndex = 0
         '
-        'Button7
+        'Button8
         '
-        Me.Button7.Location = New System.Drawing.Point(13, 212)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 8
-        Me.Button7.Text = "Button7"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Button8.Location = New System.Drawing.Point(13, 240)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.TabIndex = 9
+        Me.Button8.Text = "Button8"
+        Me.Button8.UseVisualStyleBackColor = True
         '
-        'Form1
+        'FormV
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(487, 457)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -129,7 +140,7 @@ Partial Class FormV
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Morphic)
-        Me.Name = "Form1"
+        Me.Name = "FormV"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -144,5 +155,6 @@ Partial Class FormV
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Button8 As System.Windows.Forms.Button
 
 End Class

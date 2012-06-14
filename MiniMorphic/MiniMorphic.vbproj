@@ -89,6 +89,7 @@
     <Compile Include="Drawers\CircleDrawer.vb" />
     <Compile Include="Drawers\Drawer.vb" />
     <Compile Include="Drawers\ImageDrawer.vb" />
+    <Compile Include="Drawers\LineDrawer.vb" />
     <Compile Include="Drawers\PluggableDrawer.vb" />
     <Compile Include="Events\EventHandler.vb" />
     <Compile Include="Events\MorphicEvent.vb" />
@@ -104,6 +105,7 @@
     <Compile Include="Morphic.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Morphs\LineMorph.vb" />
     <Compile Include="Morphs\Morph.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
