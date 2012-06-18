@@ -1,6 +1,6 @@
 ﻿Public Class EventHandler
 
-    Dim _functions As New Dictionary(Of Type, Func(Of MorphicEvent, Morph, Morph))
+    Protected _functions As New Dictionary(Of Type, Func(Of MorphicEvent, Morph, Morph))
 
     Public Overridable Function OnEventDo(ByVal eventType As Type, ByVal func As Func(Of MorphicEvent, Morph, Morph)) As EventHandler
         _functions(eventType) = func

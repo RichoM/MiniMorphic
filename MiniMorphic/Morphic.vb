@@ -4,9 +4,9 @@ Imports System.Drawing
 Public Class Morphic
 
     Dim _canvas As New Canvas
-    Dim _world As New Morph
+    Dim _world As New World
 
-    Public ReadOnly Property World As Morph
+    Public ReadOnly Property World As World
         Get
             Return _world
         End Get

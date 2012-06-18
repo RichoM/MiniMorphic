@@ -6,4 +6,10 @@ Public Class MouseDownEvent
     Sub New(ByVal position As PointF)
         MyBase.New(position)
     End Sub
+
+    Public Overrides ReadOnly Property IsMouseDown As Boolean
+        Get
+            Return True
+        End Get
+    End Property
 End Class

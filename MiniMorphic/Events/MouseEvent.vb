@@ -18,4 +18,39 @@ Public Class MouseEvent
         Return morph.Bounds.Contains(_position)
     End Function
 
+    Public Overrides ReadOnly Property IsMouse As Boolean
+        Get
+            Return True
+        End Get
+    End Property
+
+    Public Overridable ReadOnly Property IsMouseDown As Boolean
+        Get
+            Return False
+        End Get
+    End Property
+
+    Public Overridable ReadOnly Property IsMouseUp As Boolean
+        Get
+            Return False
+        End Get
+    End Property
+
+    Public Overridable ReadOnly Property IsMouseMove As Boolean
+        Get
+            Return False
+        End Get
+    End Property
+
+    Public Overridable ReadOnly Property IsMouseEnter As Boolean
+        Get
+            Return False
+        End Get
+    End Property
+
+    Public Overridable ReadOnly Property IsMouseLeave As Boolean
+        Get
+            Return False
+        End Get
+    End Property
 End Class

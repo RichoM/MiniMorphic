@@ -91,6 +91,7 @@
     <Compile Include="Drawers\ImageDrawer.vb" />
     <Compile Include="Drawers\LineDrawer.vb" />
     <Compile Include="Drawers\PluggableDrawer.vb" />
+    <Compile Include="Events\DefaultEventHandler.vb" />
     <Compile Include="Events\EventHandler.vb" />
     <Compile Include="Events\MorphicEvent.vb" />
     <Compile Include="Events\MouseDownEvent.vb" />
@@ -107,6 +108,7 @@
     </Compile>
     <Compile Include="Morphs\LineMorph.vb" />
     <Compile Include="Morphs\Morph.vb" />
+    <Compile Include="Morphs\World.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

@@ -19,4 +19,9 @@ Public Class MouseMoveEvent
         _lastPosition = lastPosition
     End Sub
 
+    Public Overrides ReadOnly Property IsMouseMove As Boolean
+        Get
+            Return True
+        End Get
+    End Property
 End Class

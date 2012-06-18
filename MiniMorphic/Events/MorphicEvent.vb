@@ -18,4 +18,10 @@ Public Class MorphicEvent
         _wasHandled = True
         Return Me
     End Function
+
+    Public Overridable ReadOnly Property IsMouse As Boolean
+        Get
+            Return False
+        End Get
+    End Property
 End Class

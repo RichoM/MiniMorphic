@@ -8,6 +8,12 @@ Public Class Morph
 
     Dim _submorphs As New List(Of Morph)
 
+    Public Overridable ReadOnly Property World As World
+        Get
+            Return Owner.World
+        End Get
+    End Property
+
     Public ReadOnly Property Submorphs() As Morph()
         Get
             Return _submorphs.ToArray()
@@ -48,7 +54,7 @@ Public Class Morph
         End Set
     End Property
 
-    Private _eventHandler As New EventHandler
+    Private _eventHandler As EventHandler = New DefaultEventHandler
     Public Property EventHandler() As EventHandler
         Get
             Return _eventHandler
